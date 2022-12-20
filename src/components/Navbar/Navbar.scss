@@ -9,14 +9,12 @@
         justify-content: space-between;
 
         &-logo {
-
+            display: flex;
+            align-items: center;
 
             a {
-                display: flex;
-                align-items: center;
                 font-family: $extraB;
                 font-size: 2rem;
-                text-decoration: none;
                 color: $mainTxt;
 
                 img {
@@ -26,11 +24,10 @@
             }
         }
 
-        &-links {
+        &-navigation {
             ul {
                 display: flex;
                 align-items: center;
-                justify-content: center;
                 list-style: none;
 
                 li {
@@ -40,7 +37,6 @@
                         font-family: $medium;
                         color: $smallTxt;
                         font-size: 1.1rem;
-                        text-decoration: none;
                         transition: .3s;
 
                         &:hover {
@@ -56,30 +52,153 @@
         }
 
         &-signup {
+            display: flex;
+            align-items: center;
 
             a {
-                text-decoration: none;
                 font-family: $medium;
                 font-size: 1.1rem;
                 transition: .3s;
+                justify-self: flex-end;
             }
 
             .login {
                 color: $smallTxt;
-                &:hover{
+
+                &:hover {
                     color: $hoverColor;
                 }
             }
 
             .signup {
                 color: $mainTxt;
-                margin-left: 1rem;
+                margin: 0 1rem;
                 padding: 0.6rem 1rem;
                 background-color: $signColor;
                 border-radius: 0.4rem;
 
                 &:hover {
                     opacity: 0.8;
+                }
+            }
+        }
+
+        &-smallscreen {
+            display: none;
+
+            &_overlay {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: $bgColor;
+                transition: .5s ease;
+
+                flex-direction: column;
+                z-index: 5;
+            }
+            &_links{
+                list-style: none;
+                li {
+                    margin: 1.5rem;
+
+                    a {
+                        font-family: $medium;
+                        color: $smallTxt;
+                        font-size: 1.5rem;
+                        transition: .3s;
+
+                        &:hover {
+                            color: $hoverColor;
+                        }
+
+                        &.active {
+                            color: $hoverColor;
+                        }
+                    }
+                   
+                }
+            }
+
+            &_overlay .overlay__close {
+                font-size: 1.5rem;
+                color: $mainTxt;
+
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+
+            button {
+                background-color: transparent;
+                outline: none;
+                border: none;
+
+                i {
+                    font-size: 2rem;
+                    color: $mainTxt;
+                    transition: .3s;
+
+                    &:hover {
+                        color: $hoverColor;
+                    }
+                }
+            }
+        }
+
+        @media(max-width:1150px) {
+
+
+            .navbar__section-links {
+                display: none;
+            }
+
+            .navbar__section-smallscreen {
+                display: flex;
+            }
+        }
+
+        @media(max-width:480px) {
+            .navbar {
+                &__section {
+                    &-logo {
+                        .txtLink {
+                            display: none;
+                        }
+                    }     
+                    &-signup {
+                        display: flex;
+                        align-items: center;
+            
+                        .login, .signup {
+                            font-size: 1rem;
+                        }
+            
+                        .signup {
+                            color: $mainTxt;
+                            margin: 0 1rem;
+                            padding: 0.4rem 0.8rem;
+            
+                            &:hover {
+                                opacity: 0.8;
+                            }
+                        }
+                    }  
+                    &-smallscreen {
+            
+                        &_links{
+                            li {
+                                a {
+                                    font-size: 1.2rem;
+                                }
+                               
+                            }
+                        }   
+                    }     
                 }
             }
         }

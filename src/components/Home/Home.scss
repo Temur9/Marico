@@ -1,0 +1,138 @@
+@import '../../App.scss';
+
+// FE6783 - FFBF84
+.home {
+    padding: 4rem 0;
+
+    &__section {
+        &-header_text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 4rem;
+
+            .header_txt {
+                font-family: $bold;
+                color: $mainTxt;
+                font-size: 4.5rem;
+                width: fit-content;
+            }
+
+            .gradient-txt {
+                margin-top: -1rem;
+
+                background: linear-gradient(to left, #FE6783, #FFBF84, #FE6783);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                background-size: 200%;
+
+                animation: animated_text 5s linear infinite;
+                -moz-animation: animated_text 5s linear infinite;
+                -webkit-animation: animated_text 5s linear infinite;
+
+                @keyframes animated_text {
+                    0% {
+                        background-position: 200%;
+                    }
+
+                    100% {
+                        background-position: 0%;
+                    }
+
+
+
+                }
+            }
+        }
+
+        &-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &_txt {
+                font-family: $regular;
+                font-size: 1.5rem;
+                font-weight: 500;
+                letter-spacing: 1px;
+                color: $mainTxt;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            &_btn {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+
+                a {
+                    padding: 1rem 2.5rem;
+                    font-family: $regular;
+                    margin: 0 1rem;
+                    border-radius: 0.4rem;
+                    transition: .3s;
+                }
+
+                .get__started-btn {
+                    background-color: $btnColor;
+                    color: $mainTxt;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+
+                .view__demo-btn {
+                    border: 1px solid $smallTxt;
+                    color: $smallTxt;
+
+                    &:hover {
+                        border: 1px solid $hoverColor;
+                        color: $hoverColor;
+                    }
+                }
+            }
+
+            &_smallTxt {
+                display: flex;
+                align-items: center;
+
+                .pulse {
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    margin-right: 8px;
+                    border-radius: 50%;
+                    background-color: $pulseClr;
+                    animation: pulse 3s infinite;
+
+                    @keyframes pulse {
+                        0% {
+                            box-shadow: 0 0 0 0 $pulseClr;
+                        }
+
+                        75% {
+                            box-shadow: 0 0 0 10px transparent;
+                        }
+                    }
+                }
+
+                p {
+                    font-family: $regular;
+                    color: $smallTxt;
+                    font-size: 1rem;
+
+                    span {
+                        font-family: $bold;
+                        color: $mainTxt;
+                    }
+                }
+            }
+        }
+    }
+}
