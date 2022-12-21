@@ -30,9 +30,9 @@
 
                 background-size: 200%;
 
-                animation: animated_text 5s linear infinite;
-                -moz-animation: animated_text 5s linear infinite;
-                -webkit-animation: animated_text 5s linear infinite;
+                animation: animated_text 3s linear infinite;
+                -moz-animation: animated_text 3s linear infinite;
+                -webkit-animation: animated_text 3s linear infinite;
 
                 @keyframes animated_text {
                     0% {
@@ -68,7 +68,7 @@
             &_btn {
                 display: flex;
                 align-items: center;
-                margin-bottom: 1rem;
+                margin-bottom: 1.5rem;
 
                 a {
                     padding: 1rem 2.5rem;
@@ -106,10 +106,10 @@
                     display: block;
                     width: 12px;
                     height: 12px;
-                    margin-right: 8px;
+                    margin-right: 10px;
                     border-radius: 50%;
                     background-color: $pulseClr;
-                    animation: pulse 3s infinite;
+                    animation: pulse 1.5s infinite;
 
                     @keyframes pulse {
                         0% {

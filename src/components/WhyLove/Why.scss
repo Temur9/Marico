@@ -1,0 +1,45 @@
+@import '../../App.scss';
+
+.why {
+    padding: 3rem 0;
+
+    .why__section {
+        &-title {
+            text-align: center;
+            margin-bottom: 2rem;
+
+            h1 {
+                font-family: $semiB;
+                font-size: 3rem;
+            }
+        }
+
+        &-reasons {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .reason {
+                h4{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    font-family: $semiB;
+                    font-size: 1.4rem;
+                    color: $mainTxt;
+
+                    img{
+                        width: 25px;
+                        margin-right: 10px;
+                    }
+                }
+                p{
+                    font-family: $regular;
+                    font-size: 0.9rem;
+                    color: $smallTxt;
+                }
+            }
+        }
+    }
+}

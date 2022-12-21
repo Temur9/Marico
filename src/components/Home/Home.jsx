@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Why from "../WhyLove/Why";
 import "./Home.scss";
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
           </div>
         </div>
       </header>
+      <Why/>
     </>
   );
 };
