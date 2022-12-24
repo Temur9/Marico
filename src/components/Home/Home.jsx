@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Step1 from "../Step1/Step1";
+import Step2 from "../Step2/Step2";
+import Step3 from "../Step3/Step3";
 import Why from "../WhyLove/Why";
 import "./Home.scss";
 const Home = () => {
@@ -20,8 +23,8 @@ const Home = () => {
                 text message subscribers.
               </h3>
               <div className="home__section-buttons_btn">
-                <Link className="get__started-btn">Get Started Now</Link>
-                <Link className="view__demo-btn">View A Demo</Link>
+                <Link to={'/#'} className="get__started-btn">Get Started Now</Link>
+                <Link to={'/#'} className="view__demo-btn">View A Demo</Link>
               </div>
               <div className="home__section-buttons_smallTxt">
                 <span className="pulse"></span>
@@ -34,6 +37,9 @@ const Home = () => {
         </div>
       </header>
       <Why/>
+      <Step1/>
+      <Step2/>
+      <Step3/>
     </>
   );
 };

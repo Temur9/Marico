@@ -1,5 +1,5 @@
 import React from "react";
-import './Why.scss'
+import "./Why.scss";
 
 const Why = () => {
   return (
@@ -30,7 +30,7 @@ const Why = () => {
                   <img src="/images/Party_emoji.svg" alt="smile-emoji" />
                   More Time
                 </h4>
-                <p>Never worry about losing your audience.</p>
+                <p>Spend less time on marketing tools.</p>
               </div>
             </div>
           </div>
