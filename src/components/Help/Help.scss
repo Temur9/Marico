@@ -1,0 +1,28 @@
+@import '../../App.scss';
+.help{
+
+    padding: 6rem 0;
+    margin-bottom: 6rem;
+
+
+    background-image: url('../../../public/images/help.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    &__section{
+        height: 400px;
+        display: flex;
+            align-items: center;
+            justify-content: center;
+
+            
+        &-title{
+            
+            
+            h1{
+                font-family: $semiB;
+                font-size: 2.8rem;
+                color: $mainTxt;
+            }
+        }
+    }
+}

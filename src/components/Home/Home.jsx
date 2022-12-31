@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Experts from "../Experts/Experts";
+import Footer from "../Footer/Footer";
+import Help from "../Help/Help";
 import Step1 from "../Step1/Step1";
 import Step2 from "../Step2/Step2";
 import Step3 from "../Step3/Step3";
@@ -40,6 +43,9 @@ const Home = () => {
       <Step1/>
       <Step2/>
       <Step3/>
+      <Experts/>
+      <Help/>
+      <Footer/>
     </>
   );
 };

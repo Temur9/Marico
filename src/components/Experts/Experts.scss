@@ -1,0 +1,23 @@
+@import '../../App.scss';
+
+.experts{
+padding: 2rem 0 4rem 0;
+    &__section{
+        width: 95%;
+        margin: 0 auto;
+        h1{
+            font-family: $semiB;
+            font-size: 3rem;
+            color: $mainTxt;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        &-image{
+            img{
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+}

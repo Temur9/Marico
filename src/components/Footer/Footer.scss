@@ -1,0 +1,148 @@
+@import '../../App.scss';
+
+.footer {
+    padding: 3rem 0;
+
+    &__section {
+       
+
+        &-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            margin-bottom: 6rem;
+            img {
+                width: 120px;
+                margin-bottom: 1rem;
+            }
+
+            h1 {
+                font-family: $bold;
+                font-size: 4rem;
+                color: $mainTxt;
+            }
+
+            &>p {
+                font-family: $regular;
+                font-size: 1.8rem;
+
+                color: $mainTxt;
+                margin-bottom: 1rem;
+            }
+
+            a {
+
+                padding: 1rem 4rem;
+                font-family: $medium;
+                font-size: 1.2rem;
+                font-weight: 500;
+                margin: 0 1rem;
+                border-radius: 0.4rem;
+                transition: .3s;
+
+                background-color: $btnColor;
+                color: $mainTxt;
+                margin-bottom: 1.5rem;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+
+            }
+
+            &_smallTxt {
+
+                display: flex;
+                align-items: center;
+
+                .pulse {
+                    display: block;
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 15px;
+                    border-radius: 50%;
+                    background-color: $pulseClr;
+                    animation: pulse 1.5s infinite;
+
+                    @keyframes pulse {
+                        0% {
+                            box-shadow: 0 0 0 0 $pulseClr;
+                        }
+
+                        75% {
+                            box-shadow: 0 0 0 10px transparent;
+                        }
+                    }
+                }
+
+                p {
+                    font-family: $regular;
+                    color: $smallTxt;
+                    font-size: 1.3rem;
+
+                    span {
+                        font-family: $bold;
+                        color: $mainTxt;
+                    }
+                }
+            }
+        }
+
+        &-navigation{
+            display: flex;  
+            align-items: center;
+            justify-content: space-between;
+            &_logos{
+                .footer__section-navigation_logo{
+                    display: flex;
+                    align-items: center;
+                    a {
+                        font-family: $extraB;
+                        font-size: 2rem;
+                        color: $mainTxt;
+        
+                        img {
+                            width: 45px;
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+                .footer__section-navigation_email{
+                    p{
+                        font-family: $regular;
+                        font-size: 1.4rem;
+                        color: $smallTxt;
+                    }
+                }
+            }
+            &_links{
+                .footer__section-navigation_link{
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+
+                    li {
+                        margin: 0 1.5rem;
+    
+                        a {
+                            font-family: $medium;
+                            color: $smallTxt;
+                            font-size: 1.2rem;
+                            transition: .3s;
+    
+                            &:hover {
+                                color: $hoverColor;
+                            }
+    
+                            &.active {
+                                color: $hoverColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
