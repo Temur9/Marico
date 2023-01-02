@@ -1,0 +1,139 @@
+@import '../../App.scss';
+
+.about {
+    padding: 4rem 0;
+
+    &__section {
+
+
+        &-title {
+            text-align: center;
+            margin-bottom: 6rem;
+
+            &_logo {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                margin-bottom: 3rem;
+
+                img {
+                    width: 60px;
+                    margin-right: 1rem;
+                }
+
+                p {
+                    font-family: $extraB;
+                    font-size: 2.5rem;
+                    color: $mainTxt;
+                }
+            }
+
+            &_mission {
+                h6 {
+                    font-family: $semiB;
+                    font-size: 1rem;
+                    color: $stepColor;
+                    text-transform: uppercase;
+                }
+
+                h1 {
+                    font-family: $semiB;
+                    font-size: 3rem;
+                    color: $mainTxt;
+                }
+
+                p {
+                    font-family: $regular;
+                    font-size: 1.2rem;
+                    color: $mainTxt;
+                }
+            }
+        }
+
+        &-info {
+            width: 65%;
+            margin: 0 auto;
+            margin-bottom: 8rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #8282828e;
+
+            p {
+                font-family: $regular;
+                font-size: 1.1rem;
+                color: $mainTxt;
+                line-height: 28px;
+            }
+
+            h6 {
+                font-family: $semiB;
+                font-size: 1.1rem;
+                color: $mainTxt;
+            }
+        }
+
+        &-team {
+            text-align: center;
+            h6 {
+                font-family: $semiB;
+                font-size: 1rem;
+                color: $stepColor;
+                text-transform: uppercase;
+            }
+
+            h1 {
+                font-family: $semiB;
+                font-size: 3rem;
+                color: $mainTxt;
+                margin-bottom: 3rem;
+            }
+
+            &_employee {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .employee {
+                    .employee_img {
+                        width: 80px;
+                        margin-bottom: 1rem;
+                    }
+
+                    h3 {
+                        font-family: $bold;
+                        font-size: 1.5rem;
+                        color: $mainTxt;
+                    }
+
+                    p {
+                        font-family: $regular;
+                        font-size: 0.9rem;
+                        color: $smallTxt;
+                        margin-bottom: 1rem;
+                    }
+
+
+
+                    &_link{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                        a {
+                            font-family: $medium;
+                            font-size: 0.95rem;
+                            color: $mainTxt;
+    
+                        }
+                        img{
+                           width: 12px;
+                           margin-left: 6px;
+                       }
+                    }
+
+
+                }
+            }
+
+        }
+    }
+}

@@ -34,13 +34,13 @@ const Footer = () => {
               <div className="footer__section-navigation_links">
                 <ul className="footer__section-navigation_link">
                   <li>
-                    <NavLink to={"/k"}>About</NavLink>
+                    <NavLink to={"/about"}>About</NavLink>
                   </li>
                   <li>
-                    <NavLink to={"/s"}>Pricing</NavLink>
+                    <NavLink to={"/pricing"}>Pricing</NavLink>
                   </li>
                   <li>
-                    <NavLink to={"/a"}>Blog</NavLink>
+                    <NavLink to={"/blog"}>Blog</NavLink>
                   </li>
                 </ul>
               </div>

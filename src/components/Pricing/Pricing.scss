@@ -1,0 +1,164 @@
+@import '../../App.scss';
+
+.pricing {
+    padding: 3rem 0;
+
+    &__section {
+        &-title {
+            text-align: center;
+            margin-bottom: 5rem;
+
+            h1 {
+                font-family: $semiB;
+                font-size: 3rem;
+                color: $mainTxt;
+            }
+        }
+
+        &-prices {
+            
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            &_table {
+                margin: 1rem 0;
+                width: 320px;
+                padding: 1.2rem 1.5rem;
+                border: 1px solid $smallTxt;
+                border-radius: 1.2rem;
+                background-color: #131313;
+
+                transition: .2s ease;
+
+                // HOVER TABLE
+                &:hover {
+                    background-color: $hoverColor;
+                    transform: translateY(-1rem);
+
+                    .header-title {
+                        p {
+                            color: $mainTxt;
+                        }
+                        h2{
+                            span{
+                                color: $mainTxt;
+                            }
+                        }
+
+                    }
+
+                    .info {
+                        p {
+                            color: $mainTxt;
+                        }
+                    }
+
+                    .button {
+                        a {
+                            color: $hoverColor;
+                            border: 2px solid $mainTxt;
+                            background-color: $mainTxt;
+                        }
+                    }
+                }
+
+                .header-title {
+                    margin-bottom: 3rem;
+
+                    h3 {
+                        font-family: $semiB;
+                        font-size: 1.8rem;
+                        color: $mainTxt;
+                    }
+
+                    p {
+                        font-family: $regular;
+                        font-size: 1rem;
+                        color: #b4b1b1;
+                    }
+
+                    h2 {
+                        font-family: $bold;
+                        font-size: 2.5rem;
+                        color: $mainTxt;
+
+                        span {
+                            font-family: $regular;
+                            font-size: 0.95rem;
+                            font-weight: 400;
+                            color: #b4b1b1;
+                        }
+                    }
+                }
+
+                .info {
+                    margin-bottom: 1.5rem;
+
+                    h4 {
+                        font-family: $bold;
+                        font-size: 0.95rem;
+                        color: $mainTxt;
+                        margin-bottom: 0.2rem;
+                    }
+
+                    h5 {
+                        font-family: $regular;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        color: $mainTxt;
+                        margin-bottom: 1rem;
+                    }
+
+                    p {
+                        font-family: $regular;
+                        font-weight: 400;
+                        font-size: 0.8rem;
+                        color: #b4b1b1;
+                        text-align: center;
+                    }
+                }
+
+                .features {
+                    margin-bottom: 2.5rem;
+
+                    h4 {
+                        font-family: $semiB;
+                        font-size: 0.95rem;
+                        color: $mainTxt;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    p {
+                        font-family: $regular;
+                        font-weight: 400;
+                        font-size: 0.8rem;
+                        color: $mainTxt;
+                        margin-bottom: 0.5rem;
+
+                        img {
+                            width: 13px;
+                            margin-right: 6px;
+                        }
+                    }
+                }
+
+                .button {
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        width: 300px;
+                        text-align: center;
+                        padding: 0.9rem 3rem;
+                        font-family: $medium;
+                        font-size: 0.95rem;
+                        color: $mainTxt;
+                        border: 2px solid #4681e7;
+                        border-radius: 0.8rem;
+                    }
+                }
+            }
+        }
+
+    }
+}

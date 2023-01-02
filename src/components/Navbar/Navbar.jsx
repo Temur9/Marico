@@ -20,13 +20,13 @@ const Navbar = () => {
             <div className="navbar__section-navigation">
               <ul className="navbar__section-links">
                 <li>
-                  <NavLink to={"/k"}>About</NavLink>
+                  <NavLink to={"/about"}>About</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/s"}>Pricing</NavLink>
+                  <NavLink to={"/pricing"}>Pricing</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/a"}>Blog</NavLink>
+                  <NavLink to={"/blog"}>Blog</NavLink>
                 </li>
               </ul>
             </div>
