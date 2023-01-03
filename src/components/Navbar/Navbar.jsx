@@ -31,10 +31,10 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="navbar__section-signup">
-              <Link className="login" to="/#">
+              <Link className="login" to="/logIn">
                 Login
               </Link>
-              <Link className="signup" to="/#">
+              <Link className="signup" to="/signUp">
                 Sign Up
               </Link>
               <div className="navbar__section-smallscreen">

@@ -1,0 +1,183 @@
+@import '../../App.scss';
+
+.signUp {
+    padding: 2rem 0;
+
+    &__section {
+        &-title {
+            text-align: center;
+            margin-bottom: 2rem;
+
+            h1 {
+                font-family: $semiB;
+                font-size: 3rem;
+                color: $mainTxt;
+            }
+
+            p {
+                font-family: $regular;
+                font-size: 1.2rem;
+                color: $mainTxt;
+            }
+        }
+
+        &-form {
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+
+            form {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .input {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    position: relative;
+
+                    input {
+                        width: 350px;
+                        padding: 1rem 2rem;
+                        margin: 2rem;
+
+                        background-color: transparent;
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid #595959;
+
+                        font-family: $regular;
+                        font-size: 1.125rem;
+                        color: $mainTxt;
+
+                        z-index: 1;
+                        color: $mainTxt;
+
+                        transition: .3s ease;
+                        &:hover{
+                            border-bottom: 1px solid $hoverColor;
+                        }
+                        &:focus,
+                        &:valid {
+                            &+label {
+                                color: $hoverColor;
+                                transform: translateY(-30px);
+                                font-size: 1rem;
+                            }
+                        }
+
+                        background-position: center right;
+                        background-repeat: no-repeat;
+                        background-size: 22px;
+
+                    }
+
+                    #name {
+                        background-image: url('../../../public/images/User.svg');
+                    }
+
+                    #email {
+                        background-image: url('../../../public/images/At_sign.svg');
+                    }
+
+                    #password {
+                        background-image: url('../../../public/images/Eye.svg');
+                    }
+
+                    label {
+                        position: absolute;
+                        top: 48px;
+                        left: 32px;
+                        transition: all .3s;
+
+                        font-family: $regular;
+                        font-size: 1.125rem;
+                        color: $mainTxt;
+                    }
+                }
+
+                button {
+                    width: 350px;
+                    padding: 1rem 2rem;
+                    margin: 2rem;
+
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 0.4rem;
+                    background-color: $btnColor;
+
+                    font-family: $regular;
+                    font-size: 1.125rem;
+                    color: $mainTxt;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+
+        &-footer_title {
+            text-align: center;
+            margin-bottom: 2rem;
+
+            h1 {
+                font-family: $semiB;
+                font-size: 2.5rem;
+                color: $mainTxt;
+            }
+
+            p {
+                font-family: $regular;
+                font-size: 1.2rem;
+                color: $mainTxt;
+            }
+        }
+
+        &-other_ways-signUp {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+            margin-bottom: 2rem;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                width: 320px;
+                margin: 1rem;
+                padding: 0.5rem 1.5rem;
+
+                border: 1px solid $mainTxt;
+                border-radius: 0.4rem;
+
+                font-family: $regular;
+                font-size: 0.9rem;
+                color: $mainTxt;
+                transition: .3s ease;
+                &:hover{
+                    border: 1px solid $hoverColor;
+                }
+                img {
+                    width: 28px;
+                    margin-right: 15px;
+                }
+            }
+        }
+        &-footer_link{
+            text-align: center;
+            a{
+                font-family: $medium;
+                font-size: 0.85rem;
+                color: $mainTxt;
+transition: .3s;
+                &:hover{
+                    color: $hoverColor;
+                }
+            }
+        }
+    }
+}
