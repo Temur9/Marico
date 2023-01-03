@@ -1,0 +1,60 @@
+@import '../../App.scss';
+
+.blog{
+    padding: 4rem 0;
+    .blog__section{
+        &-title{
+            margin-bottom: 4rem;
+            text-align: center;
+            h1{
+                font-family: $semiB;
+                font-size: 3rem;
+                color: $mainTxt;
+            }
+            p{
+                font-family: $regular;
+                font-size: 1.2rem;
+                color: $mainTxt;
+            }
+        }
+        &-sources{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            &_app{
+                width: 300px;
+                padding: 1rem 1.2rem;
+                margin: 0.5rem;
+
+                border-radius: 0.5rem;
+                border: 1px solid $smallTxt;
+
+                transition: all .3s ease;
+                &:hover{
+                    border: 1px solid $hoverColor;
+                    background-color: $hoverColor;
+                    p{
+                        color: $mainTxt;
+                    }
+                    
+                }
+                img{
+                    width: 35px;
+                    margin-bottom: 0.5rem;
+                }
+                h3{
+                    font-family: $semiB;
+                    font-size: 1.2rem;
+                    color: $mainTxt;
+                    margin-bottom: 0.5rem;
+                }
+                p{
+                    font-family: $regular;
+                    font-size: 0.95rem;
+                    color: #828282;
+                }
+            }
+        }
+    }
+}
