@@ -13,15 +13,22 @@ const App = () => {
     <>
     <Navbar/>
     <Routes>
-      <Route path="/" element={<Home/>}/>
+      {/* <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/pricing" element={<Pricing/>}/>
       <Route path="/blog" element={<Blog/>}/>
       <Route path="/signUp" element={<SignUp/>}/>
-      <Route path="/logIn" element={<Login/>}/>
+      <Route path="/logIn" element={<Login/>}/> */}
     </Routes>
     </>
   );
 };
 
 export default App;
+
+
+// 320px — 480px Мобильные устройства
+// 481px — 768px Планшеты iPad
+// 769px — 1024px ноутбуки с маленьким экраном
+// 1025px — 1200px Настольные компьютеры большие экраны
+// 1201px — и больше Очень большие экраны Телевизоры и т.д.

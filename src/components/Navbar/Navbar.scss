@@ -1,7 +1,7 @@
 @import '../../App.scss';
 
 .navbar {
-    padding: 30px 0;
+    padding: 1.5rem 0;
 
     &__section {
         display: flex;
@@ -101,8 +101,10 @@
                 flex-direction: column;
                 z-index: 5;
             }
-            &_links{
+
+            &_links {
                 list-style: none;
+
                 li {
                     margin: 1.5rem;
 
@@ -120,7 +122,7 @@
                             color: $hoverColor;
                         }
                     }
-                   
+
                 }
             }
 
@@ -149,56 +151,67 @@
                 }
             }
         }
+    }
+}
 
-        @media(max-width:1150px) {
+@media(max-width:1024px) {
+    .navbar {
+        padding: 1rem 0;
 
-
-            .navbar__section-links {
-                display: none;
+        &__section {
+            &-navigation {
+                // .navbar__section-links
+                ul{
+                    display: none;
+                }
             }
 
-            .navbar__section-smallscreen {
+            &-smallscreen {
                 display: flex;
             }
         }
+    }
+}
 
-        @media(max-width:480px) {
-            .navbar {
-                &__section {
-                    &-logo {
-                        .txtLink {
-                            display: none;
+@media(max-width:480px) {
+    .navbar {
+        padding: 0.5rem 0;
+        &__section {
+            &-logo {
+                .txtLink {
+                    display: none;
+                }
+            }
+
+            &-signup {
+                display: flex;
+                align-items: center;
+
+                .login,
+                .signup {
+                    font-size: 1rem;
+                }
+
+                .signup {
+                    color: $mainTxt;
+                    margin: 0 1rem;
+                    padding: 0.4rem 0.8rem;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+
+            &-smallscreen {
+
+                &_links {
+                    li {
+                        a {
+                            font-size: 1.2rem;
                         }
-                    }     
-                    &-signup {
-                        display: flex;
-                        align-items: center;
-            
-                        .login, .signup {
-                            font-size: 1rem;
-                        }
-            
-                        .signup {
-                            color: $mainTxt;
-                            margin: 0 1rem;
-                            padding: 0.4rem 0.8rem;
-            
-                            &:hover {
-                                opacity: 0.8;
-                            }
-                        }
-                    }  
-                    &-smallscreen {
-            
-                        &_links{
-                            li {
-                                a {
-                                    font-size: 1.2rem;
-                                }
-                               
-                            }
-                        }   
-                    }     
+
+                    }
                 }
             }
         }
