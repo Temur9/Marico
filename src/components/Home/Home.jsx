@@ -39,13 +39,13 @@ const Home = () => {
           </div>
         </div>
       </header>
-      <Why/>
+      {/* <Why/>
       <Step1/>
       <Step2/>
       <Step3/>
       <Experts/>
       <Help/>
-      <Footer/>
+      <Footer/> */}
     </>
   );
 };

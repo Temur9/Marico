@@ -3,24 +3,20 @@
 // FE6783 - FFBF84
 .home {
     padding: 4rem 0;
+
     &__section {
         &-header_text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
+            text-align: center;
             margin-bottom: 4rem;
 
             .header_txt {
                 font-family: $bold;
-                color: $mainTxt;
                 font-size: 4.5rem;
-                width: fit-content;
+                line-height: 6rem;
+                color: $mainTxt;
             }
 
             .gradient-txt {
-                margin-top: -1rem;
 
                 background: linear-gradient(to left, #FE6783, #FFBF84, #FE6783);
                 -webkit-background-clip: text;
@@ -41,18 +37,11 @@
                     100% {
                         background-position: 0%;
                     }
-
-
-
                 }
             }
         }
 
         &-buttons {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
 
             &_txt {
                 font-family: $regular;
@@ -67,6 +56,7 @@
             &_btn {
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 margin-bottom: 1.5rem;
 
                 a {
@@ -100,6 +90,7 @@
             &_smallTxt {
                 display: flex;
                 align-items: center;
+                justify-content: center;
 
                 .pulse {
                     display: block;
@@ -132,6 +123,94 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .home {
+        padding: 2.5rem 0;
+
+        &__section {
+            &-header_text {
+                margin-bottom: 2rem;
+
+                .header_txt {
+                    font-size: 4rem;
+                    line-height: 5rem;
+                }
+            }
+
+            &-buttons {
+                &_txt {
+                    font-size: 1.3rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .home {
+        padding: 2rem 0;
+
+        &__section {
+            &-header_text {
+                margin-bottom: 1.5rem;
+
+                .header_txt {
+                    font-size: 3.5rem;
+                    line-height: 4.5rem;
+                }
+            }
+
+            &-buttons {
+                &_txt {
+                    font-size: 1.2rem;
+                }
+
+                &_btn {
+                    a {
+                        padding: 0.8rem 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:480px) {
+    .home {
+        padding: 1rem 0;
+
+        &__section {
+            &-header_text {
+                text-align: left;
+
+                .header_txt {
+                    font-size: 2.5rem;
+                    line-height: 3.5rem;
+                }
+            }
+
+            &-buttons {
+                &_txt{
+                    text-align: left;
+                    font-size: 1rem;
+                }
+                &_btn{
+                    a{
+                        padding: 0.6rem 0.5rem;
+                        font-size: 0.8rem;
+                    }
+                }
+                &_smallTxt{
+                    
+                }
+            }
+            
+
         }
     }
 }
