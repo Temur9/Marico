@@ -195,22 +195,18 @@
             }
 
             &-buttons {
-                &_txt{
+                &_txt {
                     text-align: left;
                     font-size: 1rem;
                 }
-                &_btn{
-                    a{
+
+                &_btn {
+                    a {
                         padding: 0.6rem 0.5rem;
                         font-size: 0.8rem;
                     }
                 }
-                &_smallTxt{
-                    
-                }
             }
-            
-
         }
     }
 }
