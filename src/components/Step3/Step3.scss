@@ -33,7 +33,7 @@
 
         &-main_info {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
 
             &-text {
                 h6 {
@@ -121,9 +121,179 @@
             &-image {
                 img {
                     width: 100%;
-                    max-width: 650px;
+                    max-width: 600px;
                     height: auto;
-                    transform: translateX(24%);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .step3 {
+        padding: 2rem 0;
+
+        &__section {
+            &-header_titles {
+                margin-bottom: 100px;
+
+                h6 {
+                    font-size: 0.9rem;
+                }
+
+                h1 {
+                    font-size: 2.5rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+
+                a {
+                    padding: 1rem 2.2rem;
+                    font-size: 0.9rem;
+                }
+
+            }
+
+            &-main_info {
+                justify-content: space-between;
+
+                &-text {
+                    h6 {
+                        font-size: 1rem;
+                        margin-bottom: 30px;
+                    }
+
+                    h1 {
+                        font-size: 2.5rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+
+                        span {
+                            &::before {
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+                    }
+
+                    &_links {
+                        a {
+                            font-size: 0.9rem;
+                            padding: 0.7rem 1rem;
+                        }
+                    }
+                }
+
+                &-image {
+                    img {
+                        transform: translateX(10%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .step3 {
+        padding: 1.5rem 0;
+
+        &__section {
+            &-header_titles {
+                margin-bottom: 40px;
+
+                h1 {
+                    font-size: 2.2rem;
+                }
+
+                a {
+                    padding: 1rem 2rem;
+                }
+            }
+
+            &-main_info {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                &-text {
+                    text-align: center;
+                    margin-bottom: 2rem;
+
+                    h1 {
+                        font-size: 2.2rem;
+
+                        br {
+                            display: none;
+                        }
+                    }
+
+                    &_links {
+                        justify-content: center;
+                    }
+                }
+
+                &-image {
+                    img {
+                        max-width: 550px;
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:480px) {
+    .step3 {
+        padding: 0;
+
+        &__section {
+            &-header_titles {
+                h1 {
+                    font-size: 1.8rem;
+                    line-height: 2.5rem;
+                }
+
+                p {
+                    br {
+                        display: none;
+                    }
+                }
+
+                a {
+                    padding: 0.9rem 1.5rem;
+                }
+            }
+
+            &-main_info {
+                &-text {
+                    text-align: start;
+
+                    h1 {
+                        font-size: 1.8rem;
+                        line-height: 2.2rem;
+
+                    }
+
+                    &_links {
+                        justify-content: flex-start;
+
+                        a {
+                            padding: 0.6rem 0.5rem;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+
+                &-image {
+                    img {
+                        max-width: 350px;
+                    }
                 }
             }
         }

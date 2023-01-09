@@ -3,7 +3,7 @@
 .why {
     padding: 3rem 0;
 
-    .why__section {
+    &__section {
         &-title {
             text-align: center;
             margin-bottom: 2rem;
@@ -39,6 +39,84 @@
                     font-family: $regular;
                     font-size: 0.9rem;
                     color: $smallTxt;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1024px){
+    .why{
+        &__section{
+            &-title{
+                h1{
+                    font-size: 2.5rem;
+                }
+            }
+            &-reasons{
+                flex-direction: column;
+                justify-content: center;
+                .reason{
+                    margin-bottom: 2.5rem;
+                    h4{
+                        font-size: 1.2rem;
+                        img{
+                            width: 22px;
+                        }
+                    }
+                    p{
+                        font-size: 0.8rem;
+                    }
+                }
+                .reason:nth-child(1){
+                    align-self: flex-start;
+                }
+                .reason:nth-child(2){
+                    align-self: center;
+                }
+                .reason:nth-child(3){
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .why{
+        &__section{
+            &-title{
+                h1{
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:480px){
+    .why{
+        &__section{
+            &-title{
+                h1{
+                    font-size: 1.8rem;
+                    line-height: 2.5rem;
+                }
+            }
+            &-reasons{
+                .reason{
+                    h4{
+                        flex-direction: column;
+                    }
+                }
+                .reason:nth-child(1){
+                    align-self: center;
+                }
+                .reason:nth-child(2){
+                    align-self: center;
+                }
+                .reason:nth-child(3){
+                    align-self: center;
                 }
             }
         }
