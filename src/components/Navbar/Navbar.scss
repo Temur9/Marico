@@ -133,6 +133,8 @@
                 position: absolute;
                 top: 20px;
                 right: 20px;
+
+                
             }
 
             button {
@@ -166,6 +168,12 @@
                 }
             }
 
+            &-signup {
+                .signup {
+                    border-radius: 1.5rem;
+                }
+            }
+
             &-smallscreen {
                 display: flex;
             }
@@ -189,14 +197,14 @@
 
                 .login,
                 .signup {
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                 }
 
                 .signup {
                     color: $mainTxt;
                     margin: 0 1rem;
                     padding: 0.4rem 0.8rem;
-
+                    border-radius: 1.5rem;
                     &:hover {
                         opacity: 0.8;
                     }

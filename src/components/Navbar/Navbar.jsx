@@ -39,7 +39,7 @@ const Navbar = () => {
               </Link>
               <div className="navbar__section-smallscreen">
                 <button onClick={() => setToggleMenu(true)}>
-                  <i class="fa-solid fa-bars"></i>
+                  <i className="fa-solid fa-bars"></i>
                 </button>
                 {toggleMenu && (
                   <div className="navbar__section-smallscreen_overlay slide-bottom">
@@ -50,13 +50,25 @@ const Navbar = () => {
                     </button>
                     <ul className="navbar__section-smallscreen_links">
                       <li>
-                        <NavLink to={"/k"}>About</NavLink>
+                        <NavLink
+                          to={"/about"}
+                          onClick={() => setToggleMenu(false)}>
+                          About
+                        </NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/s"}>Pricing</NavLink>
+                        <NavLink
+                          to={"/pricing"}
+                          onClick={() => setToggleMenu(false)}>
+                          Pricing
+                        </NavLink>
                       </li>
                       <li>
-                        <NavLink to={"/a"}>Blog</NavLink>
+                        <NavLink
+                          to={"/blog"}
+                          onClick={() => setToggleMenu(false)}>
+                          Blog
+                        </NavLink>
                       </li>
                     </ul>
                   </div>

@@ -34,12 +34,14 @@
                     font-size: 1rem;
                     color: $stepColor;
                     text-transform: uppercase;
+                    margin-bottom: 1rem;
                 }
 
                 h1 {
                     font-family: $semiB;
                     font-size: 3rem;
                     color: $mainTxt;
+                    margin-bottom: 1rem;
                 }
 
                 p {
@@ -73,6 +75,7 @@
 
         &-team {
             text-align: center;
+
             h6 {
                 font-family: $semiB;
                 font-size: 1rem;
@@ -113,27 +116,233 @@
 
 
 
-                    &_link{
+                    &_link {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        
+
                         a {
                             font-family: $medium;
                             font-size: 0.95rem;
                             color: $mainTxt;
-    
+
                         }
-                        img{
-                           width: 12px;
-                           margin-left: 6px;
-                       }
+
+                        img {
+                            width: 12px;
+                            margin-left: 6px;
+                        }
                     }
 
 
                 }
             }
 
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .about {
+        padding: 3rem 0;
+
+        &__section {
+            &-title {
+
+                &_logo {
+                    margin-bottom: 2rem;
+
+                    img {
+                        width: 50px;
+                    }
+
+                    p {
+                        font-size: 2.2rem;
+                    }
+                }
+
+                &_mission {
+                    h6 {
+                        font-size: 0.9rem;
+                        margin-bottom: 0.7rem;
+                    }
+
+                    h1 {
+                        font-size: 2.5rem;
+                        margin-bottom: 0.7rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            &-info {
+                width: 80%;
+                margin-bottom: 6rem;
+            }
+
+            &-team {
+                h6 {
+                    font-size: 0.9rem;
+                }
+
+                h1 {
+                    font-size: 2.5rem;
+                }
+
+                &_employee {
+                    justify-content: space-around;
+
+                    .employee {
+                        .employee_img {
+                            width: 70px;
+                        }
+
+                        h3 {
+                            font-size: 1.2rem;
+                        }
+
+                        p {
+                            font-size: 0.85rem;
+                        }
+
+                        &_link {
+                            a {
+                                font-size: 0.9rem;
+                            }
+
+                            img {
+                                width: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .about {
+        padding: 2rem 0;
+
+        &__section {
+            &-title {
+
+                &_logo {
+                    img {
+                        width: 45px;
+                    }
+
+                    p {
+                        font-size: 2rem;
+                    }
+                }
+
+                &_mission {
+                    h1 {
+                        font-size: 2.2rem;
+                    }
+                    p{
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            &-info {
+                width: 90%;
+                margin-bottom: 4rem;
+
+                p {
+                    font-size: 1rem;
+                }
+
+                h6 {
+                    font-size: 1rem;
+                }
+            }
+
+            &-team {
+                h1 {
+                    font-size: 2.2rem;
+                }
+
+                &_employee {
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+
+                    .employee {
+                        width: 200px;
+
+                        .employee_img {
+                            width: 60px;
+                        }
+
+                        p {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:480px) {
+    .about {
+        &__section {
+            &-title {
+                margin-bottom: 4rem;
+                &_logo {
+                    img {
+                        width: 40px;
+                    }
+                }
+
+                &_mission {
+                    h1 {
+                        font-size: 1.8rem;
+                        line-height: 2.2rem;
+                        br{
+                            display: none;
+                        }
+                    }
+
+                    p {
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            &-info {
+                width: 100%;
+
+                p {
+                    font-size: 0.9rem;
+                }
+
+                h6 {
+                    font-size: 0.9rem;
+                }
+            }
+
+            &-team {
+                h1 {
+                    font-size: 1.8rem;
+                }
+
+                &_employee {
+                    .employee {
+                        margin-bottom: 2.5rem;
+                    }
+                }
+            }
         }
     }
 }

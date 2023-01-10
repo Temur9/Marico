@@ -279,11 +279,11 @@
                     font-size: 0.9rem;
                 }
                 &_smallTxt{
+                    justify-content: center;
                     .pulse{
                         width: 10px;
                         height: 10px;
                         margin-right: 10px;
-
                     }
                     p{
                         font-size: 1rem;
