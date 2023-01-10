@@ -5,7 +5,6 @@
 
     &__section {
        
-
         &-title {
             display: flex;
             align-items: center;
@@ -64,7 +63,7 @@
                     margin-right: 15px;
                     border-radius: 50%;
                     background-color: $pulseClr;
-                    animation: pulse 1.5s infinite;
+                    animation: pulse 1.1s infinite;
 
                     @keyframes pulse {
                         0% {
@@ -147,3 +146,172 @@
     }
 }
 
+@media(max-width:1024px){
+    .footer{
+        &__section{
+            &-title{
+                img{
+                    width: 100px;
+                }
+                h1{
+                    font-size: 3.2rem;
+                }
+                &>p{
+                    font-size: 1.5rem;
+                }
+                a{
+                    padding: 1rem 3rem;
+                    font-size: 1rem;
+                }
+            }
+
+            &-navigation{
+                &_logos{
+                    .footer__section-navigation_logo{
+                        a{
+                            font-size: 1.8rem;
+
+                            img{
+                                width: 40px;
+                            }
+                        }
+                    }
+                    .footer__section-navigation_email{
+                        p{
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+                &_links{
+                    .footer__section-navigation_link{
+                        li{
+                            a{
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .footer{
+        padding: 2rem 0;
+
+        &__section{
+            &-title{
+                img{
+                    width: 90px;
+                }
+                h1{
+                    font-size: 2.8rem;
+                }
+                &>p{
+                    font-size: 1.2rem;
+                }
+                a{
+                    padding: 1rem 2.5rem;
+                }
+                &_smallTxt{
+                    .pulse{
+                        width: 13px;
+                        height: 13px;
+                    }
+                    p{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            &-navigation{
+                &_logos{
+                    .footer__section-navigation_logo{
+                        a{
+                            font-size: 1.5rem;
+
+                            img{
+                                width: 35px;
+                            }
+                        }
+                    }
+                    .footer__section-navigation_email{
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                &_links{
+                    .footer__section-navigation_link{
+                        li{
+                            margin: 0 1rem;
+                            a{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:480px){
+    .footer{
+        padding: 1rem 0;
+
+        &__section{
+            &-title{
+                margin-bottom: 3rem;
+                img{
+                    width: 75px;
+                }
+                h1{
+                    text-align: center;
+                    font-size: 2.2rem;
+                }
+                &>p{
+                    text-align: center;
+                    font-size: 1.1rem;
+                }
+                a{
+                    padding: 0.8rem 2rem;
+                    font-size: 0.9rem;
+                }
+                &_smallTxt{
+                    .pulse{
+                        width: 10px;
+                        height: 10px;
+                        margin-right: 10px;
+
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            &-navigation{
+                flex-direction: column;
+                justify-content: center;
+                &_logos{
+                    margin-bottom: 1.2rem;
+                    .footer__section-navigation_logo{
+                        a{
+                            font-size: 1.3rem;
+
+                            img{
+                                width: 30px;
+                                margin-right: 0.5rem;
+                            }
+                        }
+                    }
+                    .footer__section-navigation_email{
+                        p{
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
