@@ -26,8 +26,8 @@ const Home = () => {
                 text message subscribers.
               </h3>
               <div className="home__section-buttons_btn">
-                <Link to={'/#'} className="get__started-btn">Get Started Now</Link>
-                <Link to={'/#'} className="view__demo-btn">View A Demo</Link>
+                <Link to='/#' className="get__started-btn">Get Started Now</Link>
+                <Link to='/#' className="view__demo-btn">View A Demo</Link>
               </div>
               <div className="home__section-buttons_smallTxt">
                 <span className="pulse"></span>
@@ -44,8 +44,8 @@ const Home = () => {
       <Step2/>
       <Step3/>
       <Experts/>
-      {/* <Help/>
-      <Footer/> */}
+      <Help/>
+      <Footer/>
     </>
   );
 };
