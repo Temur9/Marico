@@ -32,7 +32,7 @@ const sources = [{
     },
     {
         logo: '/images/Podcast_logo.svg',
-        name: 'Apple Podcast',
+        name: 'Apple P',
     },
     {
         logo: '/images/Instagram_logo.svg',

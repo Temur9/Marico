@@ -1,28 +1,32 @@
 @import '../../App.scss';
 
-.blog{
+.blog {
     padding: 4rem 0;
-    .blog__section{
-        &-title{
+
+    .blog__section {
+        &-title {
             margin-bottom: 4rem;
             text-align: center;
-            h1{
+
+            h1 {
                 font-family: $semiB;
                 font-size: 3rem;
                 color: $mainTxt;
             }
-            p{
+
+            p {
                 font-family: $regular;
                 font-size: 1.2rem;
                 color: $mainTxt;
             }
         }
-        &-sources{
+
+        &-sources {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
 
-            &_app{
+            &_app {
                 width: 300px;
                 padding: 1rem 1.2rem;
                 margin: 0.5rem;
@@ -31,28 +35,153 @@
                 border: 1px solid $smallTxt;
 
                 transition: all .3s ease;
-                &:hover{
+
+                &:hover {
                     border: 1px solid $hoverColor;
                     background-color: $hoverColor;
-                    p{
+
+                    p {
                         color: $mainTxt;
                     }
-                    
+
                 }
-                img{
+
+                img {
                     width: 35px;
                     margin-bottom: 0.5rem;
                 }
-                h3{
+
+                h3 {
                     font-family: $semiB;
                     font-size: 1.2rem;
                     color: $mainTxt;
                     margin-bottom: 0.5rem;
                 }
-                p{
+
+                p {
                     font-family: $regular;
                     font-size: 0.95rem;
                     color: #828282;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .blog {
+        padding: 3rem 0;
+
+        .blog__section {
+            &-title {
+                margin-bottom: 3rem;
+
+                h1 {
+                    font-size: 2.5rem;
+                }
+
+                p {
+                    font-size: 1.125rem;
+                }
+            }
+
+            &-sources {
+                justify-content: center;
+
+                &_app {
+                    width: 190px;
+                    margin: 1rem;
+
+                    img {
+                        width: 30px;
+                        margin-bottom: 0.4rem;
+                    }
+
+                    h3 {
+                        font-size: 1.1rem;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+
+    .blog {
+        padding: 2rem 0;
+
+        .blog__section {
+            &-title {
+                margin-bottom: 2rem;
+
+                h1 {
+                    font-size: 2.2rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            &-sources {
+                justify-content: center;
+
+                &_app {
+                    width: 130px;
+                    text-align: center;
+                    margin: 0.4rem;
+
+                    img {
+                        width: 25px;
+                        margin-bottom: 0.2rem;
+                    }
+
+                    h3 {
+                        font-size: 1rem;
+                        margin-bottom: 0;
+                    }
+
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:480px) {
+    .blog {
+        padding: 0;
+
+        .blog__section {
+            &-title {
+                h1 {
+                    font-size: 1.8rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+
+            &-sources {
+                &_app {
+                    width: 75px;
+
+                    img {
+                        margin-bottom: 0;
+                    }
+
+                    h3 {
+                        font-size: 0.9rem;
+                        display: none;
+                    }
                 }
             }
         }
