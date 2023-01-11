@@ -29,21 +29,21 @@ const Login = () => {
               <p>Login up with...</p>
             </div>
             <div className="login__section-other_ways-login">
-              <Link>
+              <Link to='/#'>
                 <img src="/images/Facebook.svg" alt="facebook" />
-                Log in with Facebook
+                <span>Log in with Facebook</span>
               </Link>
-              <Link>
+              <Link to='/#'>
                 <img src="/images/G_logo.svg" alt="google" />
-                Log in with Google
+                <span>Log in with Google</span>
               </Link>
-              <Link>
+              <Link to='/#'>
                 <img src="/images/Apple_logo.svg" alt="apple" />
-                Log in with Apple
+                <span>Log in with Apple</span>
               </Link>
             </div>
             <div className="login__section-footer_link">
-              <Link to={"/signUp"}>Don’t have an account? Create One.</Link>
+              <Link to="/signUp">Don’t have an account? Create One.</Link>
             </div>
           </div>
         </div>

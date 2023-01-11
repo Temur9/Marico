@@ -33,21 +33,21 @@ const SignUp = () => {
                 <p>Sign up with...</p>
             </div>
             <div className="signUp__section-other_ways-signUp">
-                <Link>
+                <Link to='/#'>
                 <img src="/images/Facebook.svg" alt="facebook" />
-                Sign up with Facebook
+                <span>Sign up with Facebook</span>
                 </Link>
-                <Link>
+                <Link to='/#'>
                 <img src="/images/G_logo.svg" alt="google" />
-                Sign up with Google
+                <span>Sign up with Google</span>
                 </Link>
-                <Link>
+                <Link to='/#'>
                 <img src="/images/Apple_logo.svg" alt="apple" />
-                Sign up with Apple
+                <span>Sign up with Apple</span>
                 </Link>
             </div>
             <div className="signUp__section-footer_link">
-                <Link to={'/logIn'}>Already have an account? Please Log in.</Link>
+                <Link to='/logIn'>Already have an account? Please Log in.</Link>
             </div>
           </div>
         </div>

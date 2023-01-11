@@ -22,7 +22,7 @@
         }
 
         &-form {
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
             margin-bottom: 2rem;
 
@@ -55,9 +55,11 @@
                         color: $mainTxt;
 
                         transition: .3s ease;
-                        &:hover{
+
+                        &:hover {
                             border-bottom: 1px solid $hoverColor;
                         }
+
                         &:focus,
                         &:valid {
                             &+label {
@@ -158,24 +160,243 @@
                 font-size: 0.9rem;
                 color: $mainTxt;
                 transition: .3s ease;
-                &:hover{
+
+                &:hover {
                     border: 1px solid $hoverColor;
                 }
+
                 img {
                     width: 28px;
                     margin-right: 15px;
                 }
             }
         }
-        &-footer_link{
+
+        &-footer_link {
             text-align: center;
-            a{
+
+            a {
                 font-family: $medium;
                 font-size: 0.85rem;
                 color: $mainTxt;
-transition: .3s;
-                &:hover{
+                transition: .3s;
+
+                &:hover {
                     color: $hoverColor;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .signUp {
+        &__section {
+            &-title {
+                h1 {
+                    font-size: 2.5rem;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+
+            &-form {
+                width: 100%;
+
+                form {
+
+                    .input {
+                        input {
+                            width: 280px;
+                            padding: 1rem 1.5rem;
+
+                            font-size: 1rem;
+
+                            &:focus,
+                            &:valid {
+                                &+label {
+                                    color: $hoverColor;
+                                    transform: translateY(-30px);
+                                    font-size: 0.8rem;
+                                }
+                            }
+
+                            background-size: 19px;
+                        }
+
+                        label {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    button {
+                        width: 280px;
+                        padding: 1rem 1.5rem;
+
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            &-footer_title {
+                h1 {
+                    font-size: 2.2rem;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+
+            &-other_ways-signUp {
+                a {
+                    width: 280px;
+                    padding: 0.5rem 1.2rem;
+
+                    font-size: 0.85rem;
+                }
+
+                img {
+                    width: 25px;
+                    margin-right: 12px;
+                }
+            }
+
+            &-footer_link {
+                a {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+    }
+}
+
+@media(max-width:768px) {
+    .signUp {
+        &__section {
+            &-title {
+                h1 {
+                    font-size: 2.2rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            &-form {
+                margin-bottom: 0.5rem;
+
+                form {
+                    .input {
+                        input {
+                            width: 360px;
+                        }
+                    }
+
+                    button {
+                        width: 240px;
+                    }
+                }
+            }
+
+            &-footer_title {
+                margin-bottom: 1rem;
+
+                h1 {
+                    font-size: 1.8rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            &-other_ways-signUp {
+                a {
+                    width: 230px;
+                    padding: 0.5rem 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:480px){
+    .signUp{
+        &__section{
+            &-title{
+                h1{
+                    font-size: 1.8rem;
+                }
+                p{
+                    font-size: 0.9rem;
+                }
+            }
+            &-form{
+                margin-bottom: 0;
+
+                form{
+                    .input{
+                        input{
+                            width: 240px;
+                            padding: 0.8rem 1.1rem;
+
+                            font-size: 0.9rem;
+
+                            &:focus,
+                            &:valid {
+                                &+label {
+                                    font-size: 0.7rem;
+                                }
+                            }
+                            background-size: 17px;
+                        }
+
+                        label{
+                            font-size: 0.9rem;
+                        }
+                    }
+                    button{
+                        width: 200px;
+                        padding: 0.8rem 1.1rem;
+
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+
+            &-footer_title{
+                h1{
+                    font-size: 1.6rem;
+                }
+
+                p{
+                    font-size: 0.9rem;
+                }
+            }
+
+            &-other_ways-signUp{
+                a{
+
+                    width: 50px;
+                    height: 50px;
+                    padding: 0;
+
+                    border-radius: 50%;
+
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 0;
+                    }
+
+                    span{
+                        display: none;
+                    }
                 }
             }
         }
