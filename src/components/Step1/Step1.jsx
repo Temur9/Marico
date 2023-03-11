@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade, Zoom } from "react-reveal";
 import { Link } from "react-router-dom";
 import "./Step1.scss";
 const Step1 = () => {
@@ -7,18 +8,20 @@ const Step1 = () => {
       <div className="step1">
         <div className="container">
           <div className="step1__section">
-            <div className="step1__section-header_titles">
-              <h6>Step 1</h6>
-              <h1>Connect Your Content</h1>
-              <p>
-                Bring all of your content together and get a Homepage that
-                <br />
-                automatically updates whenever you create anywhere online.
-              </p>
-              <Link to="/#">View Avaliable Sources</Link>
-            </div>
+            <Zoom>
+              <div className="step1__section-header_titles">
+                <h6>Step 1</h6>
+                <h1>Connect Your Content</h1>
+                <p>
+                  Bring all of your content together and get a Homepage that
+                  <br />
+                  automatically updates whenever you create anywhere online.
+                </p>
+                <Link to="/#">View Avaliable Sources</Link>
+              </div>
+              </Zoom>
             <div className="step1__section-main_info">
-              <div className="step1__section-main_info-text">
+              <Fade left><div className="step1__section-main_info-text">
                 <h6>Your Homepage</h6>
                 <h1>
                   Your Content. <br /> All in <span>One Spot</span>
@@ -39,10 +42,10 @@ const Step1 = () => {
                     View A Demo
                   </Link>
                 </div>
-              </div>
-              <div className="step1__section-main_info-image">
+              </div></Fade>
+              <Fade right><div className="step1__section-main_info-image">
                 <img src="/images/charlie.png" alt="charlie puth" />
-              </div>
+              </div></Fade>
             </div>
           </div>
         </div>

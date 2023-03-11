@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade} from "react-reveal";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import "./Pricing.scss";
@@ -9,9 +10,9 @@ const Pricing = () => {
         <div className="container">
           <div className="pricing__section">
             <div className="pricing__section-title">
-              <h1>Choose the plan that's right for you.</h1>
+              <Fade top><h1>Choose the plan that's right for you.</h1></Fade>
             </div>
-            <div className="pricing__section-prices">
+            <Fade left><div className="pricing__section-prices">
               <div className="pricing__section-prices_table">
                 <div className="header-title">
                   <h3>Starter</h3>
@@ -94,7 +95,7 @@ const Pricing = () => {
                   <Link to={"/#"}>Start Free 14-day Trial</Link>
                 </div>
               </div>
-            </div>
+            </div></Fade>
           </div>
         </div>
       </section>

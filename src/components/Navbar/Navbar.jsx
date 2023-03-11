@@ -3,10 +3,10 @@ import { Link, NavLink } from "react-router-dom";
 import "./Navbar.scss";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-
+  
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar sticky">
         <div className="container">
           <nav className="navbar__section">
             <div className="navbar__section-logo">
