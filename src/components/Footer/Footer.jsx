@@ -2,6 +2,11 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Footer.scss";
 const Footer = () => {
+  const goToTop = () => {
+    window.scrollTo({
+      top:0
+    })
+  };
   return (
     <>
       <footer className="footer">
@@ -34,13 +39,13 @@ const Footer = () => {
               <div className="footer__section-navigation_links">
                 <ul className="footer__section-navigation_link">
                   <li>
-                    <NavLink to={"/about"}>About</NavLink>
+                    <NavLink onClick={()=>goToTop()} to={"/about"}>About</NavLink>
                   </li>
                   <li>
-                    <NavLink to={"/pricing"}>Pricing</NavLink>
+                    <NavLink onClick={()=>goToTop()} to={"/pricing"}>Pricing</NavLink>
                   </li>
                   <li>
-                    <NavLink to={"/blog"}>Blog</NavLink>
+                    <NavLink onClick={()=>goToTop()} to={"/blog"}>Blog</NavLink>
                   </li>
                 </ul>
               </div>
