@@ -14,7 +14,7 @@ const Step3 = () => {
                 <h6>Step 3</h6>
                 <h1>Send Emails & Text Messages</h1>
                 <p>
-                  No more going through a social platform. Reach and engage{" "}
+                  No more going through a social platform. Reach and engage
                   <br /> your audience directly over email and text massage.
                 </p>
               </div>
